@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+h1, h3, p {
+    margin: 0;
+}
+
+.section-1 {
+    background-image: url('../img/bg-2\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 772px;
+    width: 100%;
+}
+
+.section-1 .triangle-bg {
+    background: white;
+    clip-path: polygon(0 0, 100% 0%, 0 100%);
+    width: 40%;      /* adjust */
+    height: 25%;     /* adjust */
+    position: absolute;
+    float: left;
+}
+
+.section-1 .triangle-bg .logo-img {
+    margin-left: 15%;
+    margin-top: 30px;
+}
+
+.section-1 .comment-box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: white;
+    max-width: 583px;
+    width: fit-content;
+    float: right;
+    margin-right: 20%;
+    margin-top: 340px;
+}
+
+.section-1 h3 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 32px;
+    width: fit-content;
+    text-align: center;
+}
+.section-1 h1  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 112px;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    margin: -21px 0px;
+}
+.section-1 p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    width: fit-content;
+}
+
+@media (max-width: 768px) {
+    .section-1 {
+        background-image: url('../img/sp-bg\ 1.png');
+        height: 607px;
+    }
+
+    .section-1 .triangle-bg {
+        width: 270px;  
+        height: 125px; 
+    }
+
+    .section-1 .triangle-bg .logo-img {
+        margin-left: 23px;
+        margin-top: 5px;
+    }
+
+    .section-1 .comment-box {
+        max-width: 267px;
+        margin-top: 355px;
+    }
+
+    .section-1 h3 {
+        font-size: 16px;
+    }
+
+    .section-1 h1  {
+        font-size: 58px;
+        text-align: center;
+        margin: -21px 0px;
+    }
+
+    .section-1 p {
+        font-size: 14px;
+    }
+  }
+  
+@media (max-width: 425px) {
+    /* .section-1 .triangle-bg {
+        width: 270px;  
+        height: 125px; 
+    }
+
+    .section-1 .triangle-bg .logo-img {
+        margin-left: 23px;
+        margin-top: 5px;
+    } */
+    
+    .section-1 .comment-box {
+        margin-right: 20%;
+        max-width: 267px;
+    }
+  }
