@@ -26,7 +26,7 @@ h1, h3, p {
     background: white;
     clip-path: polygon(0 0, 100% 0%, 0 100%);
     width: 40%;      /* adjust */
-    height: 25%;     /* adjust */
+    height: 180px;     /* adjust */
     position: absolute;
     float: left;
 }
@@ -105,18 +105,59 @@ h1, h3, p {
   }
   
 @media (max-width: 425px) {
-    /* .section-1 .triangle-bg {
-        width: 270px;  
-        height: 125px; 
-    }
-
-    .section-1 .triangle-bg .logo-img {
-        margin-left: 23px;
-        margin-top: 5px;
-    } */
-    
     .section-1 .comment-box {
-        margin-right: 20%;
+        margin-right: 10%;
         max-width: 267px;
     }
   }
+
+.section-2 {
+    height: 613px;
+    width: 100%;
+    background-image: url('../img/sc2-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 .comment-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 940px;
+    gap: 50px;
+    text-align: center;
+}
+
+.section-2 p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+}
+
+.section-2 h3 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 30px;
+    margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+    .section-2 {
+        height: 300px;
+    }
+
+    .section-2 .comment-box {
+        max-width: 297px;
+        gap: 20px;
+    }
+
+    .section-2 p {
+        font-size: 14px;
+    }
+
+    .section-2 h3 {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+}
