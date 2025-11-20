@@ -2,6 +2,18 @@
     box-sizing: border-box;
 }
 
+body,
+main {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  font-family: "noto-sans";
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  overflow-x: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -646,6 +658,7 @@ h1, h3, p {
     width: 900px;
     height: 1577px;
     margin-right: 5%;
+    margin-bottom: 180px;
     position: relative;
 }
 
@@ -683,10 +696,10 @@ h1, h3, p {
     right: 0;
 }
 
-.section-6 .comment-box img {
+.section-6 .comment-box .num-img {
     position: absolute;
-    top: 16px;
-    left: 16px;
+    top: 30px;
+    right: 30px;
     width: calc(100vw * 0.066);
     height: calc(100vw * 0.066);
 }
@@ -782,59 +795,166 @@ h1, h3, p {
     font-family: "Noto Sans JP", sans-serif;
 }
 
-.section-6 .comment-box .blog-box {
-    position: absolute;
+.section-6 .comment-box br.sp {
+    display: none;
+}
+
+.section-6 .blog-box {
     display: flex;
-    gap: 54px;
-    color: #0F223A;
-    width: 806px;
-    height: 270px;
-    bottom: 165px;
-    left: 26px;
+    gap: 30px;
+    max-width: 787px;
+    width: 100%;
+    /* justify-content: space-between; */
+    margin: auto;
+    margin-top: 960px;
+    padding: 10px;
+    align-items: center;
 }
 
-.section-6 .comment-box .blog-box .img-box {
-    width: 380px;
-}
-
-.section-6 .comment-box .blog-box .img-box p {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #EFF6FF;
-    width: 213px;
-    padding: 8px 16px;
+.section-6 .blog-box .left .img {
+    margin-top: -30px;
+    margin-left: 20px;
+    width: 358px;
     height: auto;
-    text-align: center;
-    z-index: 2;
-    
-}
-
-.section-6 .comment-box .blog-box .img-box img {
-    position: absolute;
-    width: 360px;
-    height: auto;
-    top: 30px;
-    left: 19px;
     z-index: 1;
 }
 
-.section-6 .comment-box .blog-box .blog-text {
-    display: flex;
-    position: relative;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+.section-6 .blog-box .left .badge-text {
+    background-color: #EFF6FF;
+    padding: 12px 18px;
+    width: fit-content;
+    position: absolute;
+    margin-top: -68px;
+    z-index: 2;
 }
+
 
 @media (max-width: 1024px) {
     .section-6 {
         justify-content: center;
+        height: 1700px;
     }
 
     .section-6 .comment-box {
         width: 80%;
         height: auto;
         margin-right: 0;
+    }
+
+    .section-6 .comment-box .polygon-box {
+        width: 470px;
+        height: 437px;
+        top: 370px;
+        right: 83px;
+    }
+
+    .section-6 .comment-box .polygon-box .poly-bg {
+        width: 193px;
+        height: 167px;
+    }
+
+    .section-6 .blog-box {
+        margin-top: 940px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .section-6 {
+        height: 1780px;
+    }
+
+    .section-6 .comment-box .text-box {
+        margin-top: 110px;
+    }
+
+    .section-6 .comment-box .polygon-box {
+        width: 421px;
+        height: 380px;
+        right: 7%;
+    }
+
+    .section-6 .comment-box .polygon-box .poly-bg {
+        width: 174px;
+        height: 144px;
+        font-size: 14px;
+    }
+
+    .section-6 .comment-box br.pc {
+        display: none;
+    }
+
+    .section-6 .comment-box br.sp {
+        display: block;
+    }
+
+    .section-6 .comment-box .rect-bg-box {
+        top: 780px;
+    }
+
+    .section-6 .blog-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 940px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .section-6 {
+        height: 1600px;
+    }
+    .section-6 .comment-box .text-box {
+        margin-left: 10%;
+    }
+
+    .section-6 .comment-box .polygon-box {
+        width: 301px;
+        height: 279px;
+        right: 7%;
+    }
+
+    .section-6 .comment-box .polygon-box .poly-bg {
+        width: 122px;
+        height: 108px;
+        font-size: 14px;
+    }
+    
+    .section-6 .comment-box .rect-bg-box {
+        top: 670px;
+    }
+    .section-6 .comment-box .rect-bg-box h3 {
+        font-size: 14px!important;
+    }
+
+    .section-6 .blog-box {
+        margin-top: 790px;
+    }
+
+    .section-6 .blog-box .left .img {
+        width: 288px;
+        height: auto;
+    }
+
+    .section-6 .comment-box .text-box h3 {
+        font-size: 18px;
+    }
+
+    .section-6 .comment-box .polygon-box .poly-bg p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+    .section-6 .comment-box .polygon-box {
+        width: 282px;
+        height: 256px;
+        right: 4%;
+    }
+
+    .section-6 .comment-box .polygon-box .poly-bg {
+        width: 113px;
+        height: 98px;
+        font-size: 12px;
     }
 }
