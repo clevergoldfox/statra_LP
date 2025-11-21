@@ -1368,7 +1368,7 @@ p {
     font-size: 36px;
     text-align: right;
     margin-bottom: 52px;
-    margin-right: 200px;
+    margin-right: 13.8%;
 }
 
 .section-8 .blog-box {
@@ -1380,7 +1380,34 @@ p {
     position: relative;
 }
 
+.section-8 .blog-box .blog-text h3 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 32px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
 
+.section-8 .blog-box .blog-text h3 div {
+    background-color: #EFF6FF;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    width: 100px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-8 .blog-box .blog-text h3 div span {
+    font-family: "montserrat", sans-serif;
+    font-size: 64px;
+}
+
+.section-8 .blog-box .blog-text p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    line-height: 2;
+}
 
 .section-8 .blog-img img {
     width: 100%;
@@ -1397,19 +1424,38 @@ p {
 }
 
 @media (max-width: 768px) {
+    .section-8 {
+        gap: 0;
+    }
+    .section-8 h3.title {
+        font-size: 24px;
+        margin: auto;
+        margin-bottom: 52px;
+    }
+    
     .section-8 .blog-box {
-        /* max-width: 1200px; */
-        /* margin: auto; */
         display: flex;
         flex-direction: column;
-        /* padding-inline: 10px; */
         gap: 16px;
-        margin-top: 100px;
+    }
+
+    .section-8 .blog-box .blog-text h3 {
+        font-size: 16px;
+    }
+
+    .section-8 .blog-box .blog-text .blog-title div {
+        width: 60px;
+        height: 72px;
+    }
+    .section-8 .blog-box .blog-text .blog-title span {
+        font-size: 32px;
     }
 
     .section-8 .blog-text p {
+        font-size: 14px!important;
+        line-height: 1.5;
         position: absolute;
-        top: 360px;
+        top: 375px;
     }
 
     .section-8 .blog-box:nth-of-type(2) {
@@ -1420,14 +1466,24 @@ p {
         padding-inline: 10px;
         gap: 16px;
         position: relative;
-        margin-top: 100px !important;
+        margin-top: 160px !important;
+    }
+    
+    .section-8 .blog-box:nth-of-type(3) {
+        margin-top: 160px !important;
     }
     
 }
 @media (max-width: 500px) {
     .section-8 .blog-text p {
         position: absolute;
-        top: 320px;
+        top: 345px;
+    }
+}
+@media (max-width: 450px) {
+    .section-8 .blog-text p {
+        position: absolute;
+        top: 326px;
     }
 }
 @media (max-width: 400px) {
