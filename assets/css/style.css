@@ -1947,3 +1947,59 @@ p {
         display: none;
     }
 }
+
+.section-11 {
+    width: 100%;
+    background-color: #0F223A;
+    padding-top: 175px;
+    padding-left: 193px;
+    padding-right: 193px;
+    padding-bottom: 110px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.section-11 h3 {
+    position: absolute;
+    top: 50px;
+    right: 125px;
+    color: white;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 32px;
+}
+
+.section-11 .card-box {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-11 .card p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-top: 33px;
+}
+
+@media (max-width: 1080px) {
+    .section-11 {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 66px;
+    }
+
+    .section-11 .card-box {
+        gap: 34px;
+    }
+}
+
+@media (max-width: 690px) {
+    .section-11 h3 {
+        font-size: 20px;
+        top: 53px;
+        right: 25px;
+    }
+}
