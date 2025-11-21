@@ -2003,3 +2003,43 @@ p {
         right: 25px;
     }
 }
+
+.section-12 {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    background-color: #EDBB81;
+    text-align: center;
+}
+
+.section-12 p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 46px;
+    color: #0F223A;
+}
+
+.section-12 br.sp {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .section-12 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .section-12 br.sp {
+        display: block;
+    }
+}
+
+@media (max-width: 425px) {
+    .section-12 p {
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
