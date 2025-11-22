@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body,
 main {
     width: 100%;
@@ -264,9 +268,26 @@ p {
 
 }
 
+
 @media (max-width: 500px) {
     .section-3 .comment-box {
+        left: 40px;
+    }
+}
+
+@media (max-width: 440px) {
+    .section-3 .comment-box {
+        left: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .section-3 .comment-box {
         left: 10px;
+    }
+
+    .section-3 .comment-box .rect-bg p {
+        font-size: 10px;
     }
 }
 
@@ -406,6 +427,9 @@ p {
     height: 682px;
     gap: 28px;
     padding-top: 136px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 115px;
     align-items: center;
     background: white;
     ;
@@ -414,6 +438,9 @@ p {
 .section-4 .comment-box h3 {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
 }
 
 .section-4 .comment-box p {
@@ -466,13 +493,13 @@ p {
         position: unset;
         position: relative;
         margin: auto;
-        padding-top: 20%;
+        padding-top: 15%;
         right: 0px;
-
+        gap: 15%;
     }
 
     .section-4 .comment-box h3 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .section-4 .comment-box p {
@@ -499,6 +526,34 @@ p {
     }
 }
 
+@media (max-width: 485px) {
+    .section-4 .comment-box h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 440px) {
+    .section-4 .comment-box h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .section-4 .comment-box h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .section-4 .comment-box h3 {
+        font-size: 12px;
+    }
+
+    .section-4 .comment-box p {
+        font-size: 12px;
+    }
+}
+
 .section-5 {
     height: 939px;
     width: 100%;
@@ -518,13 +573,12 @@ p {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* width: calc(100vw * 0.363); */
-    /* height: calc(100vw * 0.473); */
     width: 522px;
     height: 682px;
     background-color: rgba(0, 0, 0, 0.1);
     padding-top: calc(100vw * 0.1);
-
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .section-5 .comment-box img {
@@ -544,6 +598,24 @@ p {
 .section-5 .comment-box p {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 16px;
+}
+
+
+@media (max-width:768px) {
+    .section-5 .comment-box h3 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:380px) {
+    .section-5 .comment-box h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .section-5 .comment-box p {
+        font-size: 14px;
+    }
 }
 
 .section-5 .comment-box span {
@@ -825,9 +897,9 @@ p {
     gap: 30px;
     max-width: 787px;
     width: 100%;
-    /* justify-content: space-between; */
     margin: auto;
     margin-top: 960px;
+    margin-bottom: 50px;
     padding: 10px;
     align-items: center;
 }
@@ -858,7 +930,7 @@ p {
 
     .section-6 .comment-box {
         width: 80%;
-        height: auto;
+        height: fit-content;
         margin-right: 0;
     }
 
@@ -910,6 +982,7 @@ p {
     }
 
     .section-6 .comment-box .rect-bg-box {
+        clip-path: polygon(0% 33%, 50% 0%, 100% 33%, 100% 67%, 50% 100%, 0% 67%);
         top: 780px;
     }
 
@@ -979,6 +1052,34 @@ p {
         width: 113px;
         height: 98px;
         font-size: 12px;
+    }
+}
+
+@media (max-width: 410px) {
+    .section-6 .blog-box .left .img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 370px) {
+    .section-6 .comment-box .polygon-box {
+        width: 230px;
+        height: 207px;
+        right: 6%;
+    }
+
+    .section-6 .comment-box .polygon-box .poly-bg {
+        width: 95px;
+        height: 78px;
+        font-size: 12px;
+    }
+
+    .section-6 .comment-box .polygon-box .poly-bg p {
+        font-size: 11px;
+    }
+
+    .section-6 .rect-bg-box br.sp {
+        display: none;
     }
 }
 
@@ -1354,6 +1455,23 @@ p {
     }
 }
 
+@media (max-width: 375px) {
+    .section-7 .comment-box .sec-1 {
+        justify-content: center;
+    }
+
+    .section-7 .comment-box .sec-2 {
+        padding: 0 !important;
+        padding-top: 14px !important;
+        justify-content: center;
+        gap: 0 !important;
+    }
+
+    .section-7 .sec-3 h3 {
+        font-size: 16px;
+    }
+}
+
 .section-8 {
     padding-top: 100px;
     padding-bottom: calc(100vw * 0.138);
@@ -1506,6 +1624,16 @@ p {
     .section-8 .blog-text p {
         position: absolute;
         top: 300px;
+    }
+}
+
+@media (max-width: 375px) {
+    .section-8 {
+        gap: 25px;
+    }
+
+    .section-8 h3.title {
+        font-size: 20px;
     }
 }
 
@@ -1863,7 +1991,6 @@ p {
     }
 }
 
-
 @media (max-width: 640px) {
     .section-9 .comment-box .logo {
         width: 140px;
@@ -1881,6 +2008,39 @@ p {
         width: 115px;
         height: 102px;
     }
+
+    .section-9 .comment-box .outline-bar .content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+    .section-9 .comment-box .title-bar {
+        padding-left: 10px;
+        padding-right: 10px !important;
+    }
+
+    .section-9 .comment-box .title-bar h3 {
+        font-size: 12px;
+    }
+
+    .section-9 .comment-box .outline-bar .content p {
+        font-size: 10px;
+    }
+
+    .section-9 .blog-content .blog-text h3 {
+        font-size: 38px;
+        top: 45px;
+    }
+
+    .section-9 .blog-content .logo-badge img {
+        width: 40px;
+    }
+
+    .section-9 .blog-content .logo-badge p {
+        font-size: 20px;
+    }
+    
 }
 
 .section-10 {
@@ -2338,12 +2498,12 @@ p {
     align-items: center;
 }
 
-.section-14 .header .logo-group img{
+.section-14 .header .logo-group img {
     width: 100px;
     height: auto;
 }
 
-.section-14 .header .logo-group h1{
+.section-14 .header .logo-group h1 {
     font-family: "montserrat", sans-serif;
     font-size: 48px;
     color: #0F223A;
@@ -2400,11 +2560,11 @@ p {
 }
 
 @media (max-width: 1024px) {
-    .section-14 .header .logo-group img{
+    .section-14 .header .logo-group img {
         width: 70px;
     }
 
-    .section-14 .header .logo-group h1{
+    .section-14 .header .logo-group h1 {
         font-size: 28px;
     }
 }
@@ -2433,7 +2593,7 @@ p {
         font-size: 16px;
     }
 
-    .section-14 form .form-body {   
+    .section-14 form .form-body {
         gap: 40px;
     }
 
@@ -2452,7 +2612,8 @@ p {
     justify-content: center;
 }
 
-.section-15 .privacy, .section-15 .guide {
+.section-15 .privacy,
+.section-15 .guide {
     width: 100%;
     background-color: #E1E1E1;
     height: 340px;
